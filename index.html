@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="d3.v7.min.js"></script>
+  <title>Functional Dependency - IT004 - Database</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src='fd.js'></script>
+</head>
+<body>
+  <div id='FD-cont' class='float-left'>
+    <h3>Functional dependencies</h3>
+    <div id='func-dpd'>
+    </div>
+  </div><div class='float-left' id='results'>
+    <div id='keys-div'>Key(s): <span id='keys'></span></div>
+    <div id='normal-form'>
+      Normal Form:
+      <span class='NF'>1</span>
+      <span class='NF'>2</span>
+      <span class='NF'>3</span>
+      <span class='NF'>BC</span>
+    </div>
+    <div id='closure'>
+      Closure: <input type='text' oninput='findClosure()' id='inp'> &#x207A; =
+      <span id='closure-res'></span>
+    </div>
+  </div>
+
+  <script src='script.js'></script>
+</body>
+</html>
